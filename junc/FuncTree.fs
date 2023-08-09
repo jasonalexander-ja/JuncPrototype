@@ -14,6 +14,9 @@ type FuncTree =
         match this with
         | Func(_, func, _) -> func.Ident
         
+    member this.GetContext =
+        0
+
     member this.GetFunc =
         match this with
         | Func(_, func, _) -> func
